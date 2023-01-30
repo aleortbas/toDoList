@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import { Button, Form, FormGroup, Label, Input, ButtonGroup } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
@@ -14,9 +14,12 @@ class Home extends Component {
                     <div className="col-6 col-md-6">
                         <div id="loginForm">
                             <Form id="form">
-                                <h2>Sign in</h2>
+                                <h1>Sign in</h1>
+                                <Button  id="button1"><FontAwesomeIcon id="icono" icon={faFacebook}/></Button>
+                                <Button  id="button1"><FontAwesomeIcon id="icono" icon={faGoogle}/></Button>
+                                <Button  id="button1"><FontAwesomeIcon id="icono" icon={faGithub}/></Button>
                                 <p>Or sign in using E-Mail Address</p>
-                                <FormGroup>
+                                <FormGroup id="a">
                                     <Label for="email">email</Label>
                                     <Input type="email" name="email" id="email" placeholder="Email"></Input>
                                 </FormGroup>
@@ -25,12 +28,12 @@ class Home extends Component {
                                     <Input type="password" name="password" id="password" placeholder="Password"></Input>
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label check>
-                                        <Input type="checkbox"/>{''} Remeber me
+                                    <Label check id="footerLogin">
+                                        <Input type="checkbox" id="remeberMe"/>{''} Remeber me 
                                     </Label>
                                 </FormGroup>
-                                <p>Forgot your password?</p>
                                 <Button id="signIn">sign in</Button>
+                                <p id="forgotPassword">Forgot your password?</p>
                             </Form>
                         </div>
                     </div>
