@@ -8,8 +8,9 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
+                <div className="container" id="container-login">
                 <div className="row">
-                    <div className="col-6 col-md-6" style={{ backgroundColor: "red" }}>
+                    <div className="col-6 col-md-6" style={{ backgroundColor: "red", borderTopLeftRadius:"50px", borderBottomLeftRadius:"50px" }}>
                     </div>
                     <div className="col-6 col-md-6">
                         <div id="loginForm">
@@ -35,6 +36,7 @@ class Home extends Component {
                             </Form>
                         </div>
                     </div>
+                </div>
                 </div>
             </React.Fragment>
         )

@@ -1,22 +1,26 @@
+.container {
+  background-color: black;
+}
+
 .row {
   margin: 0px;
 }
 
-#loginForm{
+#loginForm {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#form{
+#form {
   background-color: #1FA8CF;
   width: 500px;
   text-align: center;
   border-radius: 60px;
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31)
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31)
 }
 
-#email{
+#email {
   width: 250px;
   height: 40px;
   border-radius: 20px;
@@ -24,7 +28,7 @@
   margin: auto;
 }
 
-#password{
+#password {
   width: 250px;
   height: 40px;
   border-radius: 20px;
@@ -32,7 +36,7 @@
   margin: auto;
 }
 
-#signIn{
+#signIn {
   width: 40%;
   border: 0px;
   border-radius: 24px;
@@ -46,44 +50,44 @@
   background-color: transparent;
 }
 
-#footerLogin{
+#footerLogin {
   display: flex;
 }
 
-#remeberMe{
+#remeberMe {
   margin-left: 25%;
 }
 
-#forgotPassword{
+#forgotPassword {
   text-align: center;
 }
 
-#button1{
+#button1 {
   margin-left: 3%;
   border-radius: 50%;
   border-radius: 50%;
   background-color: transparent;
 }
 
-#icono{
+#icono {
   transition: transform .7s ease-in-out;
 }
 
-#icono:hover{
+#icono:hover {
   color: #FCD59B;
   transform: rotate(40deg);
 }
 
-p{
-  cursor:text;
+p {
+  cursor: text;
 }
 
-#link{
-  color:inherit;
-  text-decoration:none;
+#link {
+  color: inherit;
+  text-decoration: none;
 }
 
-#link:hover{
+#link:hover {
   color: #FCD59B;
 }
 

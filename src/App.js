@@ -1,16 +1,23 @@
 import './App.css';
 import React, { Component } from 'react';
 import Main from "./components/Main";
-import { BrowserRouter } from 'react-router-dom';
+import Home from './components/HomeCompenent';
+import loginForm from './components/loginForm';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/">
+      <Route index element={<Home />} />
+      <Route path="todo" element={<loginForm/>} />
+    </Route>
+  )
+)
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Main />
-        </div>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     );
   }
 }
