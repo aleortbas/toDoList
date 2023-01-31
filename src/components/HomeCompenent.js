@@ -20,11 +20,9 @@ class Home extends Component {
                                 <Button  id="button1"><FontAwesomeIcon id="icono" icon={faGithub}/></Button>
                                 <p>Or sign in using E-Mail Address</p>
                                 <FormGroup id="a">
-                                    <Label for="email">email</Label>
                                     <Input type="email" name="email" id="email" placeholder="Email"></Input>
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label for="password">password</Label>
                                     <Input type="password" name="password" id="password" placeholder="Password"></Input>
                                 </FormGroup>
                                 <FormGroup>
@@ -33,7 +31,7 @@ class Home extends Component {
                                     </Label>
                                 </FormGroup>
                                 <Button id="signIn">sign in</Button>
-                                <p id="forgotPassword">Forgot your password?</p>
+                                <p id="forgotPassword"><a href="" id="link">Forgot your password?</a></p>
                             </Form>
                         </div>
                     </div>
