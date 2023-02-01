@@ -2,14 +2,14 @@ import './App.css';
 import React, { Component } from 'react';
 import Main from "./components/Main";
 import Home from './components/HomeCompenent';
-import loginForm from './components/loginForm';
+import ToDoList from './components/ToDoList';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route index element={<Home />} />
-      <Route path="todo" element={<loginForm/>} />
+      <Route path="ToDoList" element={<ToDoList/>} />
     </Route>
   )
 )

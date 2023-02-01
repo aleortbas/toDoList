@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input, ButtonGroup } from "reactstrap";
+import { Link, NavLink, useNavigate } from "react-router-dom"
+import { Button, FormGroup, Label, Input } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
-
 
 class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container d-flex flex-column min-vh-100 justify-content-center align-items-center">
-                <div className="row">
+                <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+                <div className="row" id="row-login">
                     <div className="col-6 col-md-6 left" id="login" style={{borderTopLeftRadius:"30px", borderBottomLeftRadius:"30px"}}>
                         <div id="login-left-side">
                         <h2>Create, <br/> Account!</h2>
@@ -34,8 +34,8 @@ class Home extends Component {
                                         <Input type="checkbox" id="remeberMe"/>{''} Remeber me 
                                     </Label>
                                 </FormGroup>
-                                <Button id="signIn">sign in</Button>
-                                <p id="forgotPassword"><a href="/" id="link">Forgot your password?</a></p>
+                                <Link to="ToDoList"><Button id="signIn" >sign in</Button></Link>
+                                <p id="forgotPassword"><a href="ForgotPassword" id="link">Forgot your password?</a></p>
                             
                     </div>
                 </div>
