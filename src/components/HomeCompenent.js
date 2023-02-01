@@ -11,11 +11,10 @@ class Home extends Component {
                 <div className="container d-flex flex-column min-vh-100 justify-content-center align-items-center">
                 <div className="row">
                     <div className="col-6 col-md-6 left" id="login" style={{borderTopLeftRadius:"30px", borderBottomLeftRadius:"30px"}}>
-                        <div className="createAccount">
-                            <h2>Create Account</h2>
+                        <div id="login-left-side">
+                        <h2>Create, <br/> Account!</h2>
                             <p>Sign up if you still don't have an account ...</p>
-                            <div className="center"></div>
-                            <Button id="" style={{backgroundColor:"red"}}>sign in</Button>
+                            <Button id="signUp">sign up</Button>
                         </div>
                     </div>
                     <div className="col-6 col-md-6" id="login" style={{borderTopRightRadius:"30px", borderBottomRightRadius:"30px"}}>
