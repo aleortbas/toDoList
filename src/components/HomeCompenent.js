@@ -8,13 +8,17 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container" id="container-login">
+                <div className="container d-flex flex-column min-vh-100 justify-content-center align-items-center">
                 <div className="row">
-                    <div className="col-6 col-md-6" style={{ backgroundColor: "red", borderTopLeftRadius:"50px", borderBottomLeftRadius:"50px" }}>
+                    <div className="col-6 col-md-6 left" id="login" style={{borderTopLeftRadius:"30px", borderBottomLeftRadius:"30px"}}>
+                        <div className="createAccount">
+                            <h2>Create Account</h2>
+                            <p>Sign up if you still don't have an account ...</p>
+                            <div className="center"></div>
+                            <Button id="" style={{backgroundColor:"red"}}>sign in</Button>
+                        </div>
                     </div>
-                    <div className="col-6 col-md-6">
-                        <div id="loginForm">
-                            <Form id="form">
+                    <div className="col-6 col-md-6" id="login" style={{borderTopRightRadius:"30px", borderBottomRightRadius:"30px"}}>
                                 <h1>Sign in</h1>
                                 <Button  id="button1"><FontAwesomeIcon id="icono" icon={faFacebook}/></Button>
                                 <Button  id="button1"><FontAwesomeIcon id="icono" icon={faGoogle}/></Button>
@@ -32,9 +36,8 @@ class Home extends Component {
                                     </Label>
                                 </FormGroup>
                                 <Button id="signIn">sign in</Button>
-                                <p id="forgotPassword"><a href="" id="link">Forgot your password?</a></p>
-                            </Form>
-                        </div>
+                                <p id="forgotPassword"><a href="/" id="link">Forgot your password?</a></p>
+                            
                     </div>
                 </div>
                 </div>
