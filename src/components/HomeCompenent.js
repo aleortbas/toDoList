@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Button, FormGroup, Label, Input } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";

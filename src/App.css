@@ -17,14 +17,6 @@
   }
 }
 
-#test{
-   height: 100vh;
-}
-
-#rowtest{
-  height: calc(100vh - 56px);
-}
-
 .row{
   
 }
@@ -150,6 +142,36 @@
   align-items: center;
   text-align: center; 
 }
+
+#test{
+  height: 100vh;
+  box-shadow: 5px 5px 15px 20px rgba(0, 0, 0, 0.31);
+}
+
+#rowtest{
+  height: calc(100vh - 50px);
+  background-color: #f2f2f2;
+}
+
+#list-ul{
+  height: calc((100vh - 80px)/9);
+  list-style-type: none;
+}
+
+#list{
+  list-style-type: none;
+}
+
+#navbar-toDo{
+  background-color: #57F3C4;
+  height: 50px;
+}
+
+#navbar-title{
+  text-decoration: none;
+  color: #000;
+}
+
 
 p {
   cursor: text;
